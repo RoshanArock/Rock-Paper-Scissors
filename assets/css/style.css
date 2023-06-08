@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap");
+
+:root{
+  --dark-blue: #fdfffc;
+  --yellow: #011627;
+}
+
+
+
+
+* {
+  margin: 0%;
+  padding: 0;
+}
+body {
+  background-color: var(--yellow);
+  font-family: "Asap", sans-serif;
+}
+header h1 {
+  background-color: var(--dark-blue);
+  color: var(--yellow);
+  text-align: center;
+  padding: 10px ;
+}
+.score-board {
+  margin: 20px auto;
+  border: 3px var(--dark-blue) solid;
+  width: 200px;
+  font-size: 46px;
+  color: var(--dark-blue);
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+}
+.badge{
+    background-color: orangered;
+    color: white;
+    font-size: 14px;
+    padding: 3px 5px;
+}
+#user-id{
+position: absolute;
+top: 25px;
+left: -20px;
+}
+#comp-id{
+position: absolute;
+top: 25px;
+right: -20px;
+}
+.choices{
+    text-align: center;
+}
+.choice {
+    display: inline-block;
+    border: 4px var(--dark-blue) solid;
+    border-radius: 50%;
+    margin: 20px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+
+
+#rock img, #paper img, #scissors img{
+  padding: 10px;
+}
+
+
+.result{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--dark-blue);
+    font-size: 25px;
+    margin-top: 40px;
+    font-weight: bolder;
+}
+
+
+.reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.reset button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.reset-button {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .reset-button {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .reset-button {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+.green-glow {
+  border: 4px solid #38b000;
+  box-shadow: 0 0 10px #38b000;
+}
+
+.red-glow {
+  border: 4px solid #fc121b;
+  box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+  border: 4px solid #808080;
+  box-shadow: 0 0 10px #25292b
+}
